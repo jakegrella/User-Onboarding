@@ -56,8 +56,8 @@ export default function App() {
 		axios
 			.get(`https://reqres.in/api/users`)
 			.then((res) => {
-        console.log('res.data', res.data)
-        console.log('res.data.data', res.data.data)
+				console.log('res.data', res.data);
+				console.log('res.data.data', res.data.data);
 				setTeamMembers(res.data.data);
 			})
 			.catch((err) => {
@@ -115,9 +115,9 @@ export default function App() {
 			//policies
 			terms: formValues.terms,
 			privacy: formValues.privacy,
-      gum: formValues.gum,
+			gum: formValues.gum,
 		};
-    console.log(newTeamMember)
+		console.log(newTeamMember);
 		postNewTeamMember(newTeamMember);
 	};
 
@@ -150,12 +150,12 @@ export default function App() {
 				errors={formErrors}
 			/>
 
-			{/* <TeamMember details={teamMembers[0]}/> */}
-			{/* {console.log(teamMembers.data)} */}
-
-			{teamMembers.map((member) => {
-				return <TeamMember details={member} />;
-			})}
+			<h2 className='team-members-heading'>Current Team Members</h2>
+			<div className='team-members'>
+				{teamMembers.map((member) => {
+					return <TeamMember details={member} />;
+				})}
+			</div>
 		</div>
 	);
 }

@@ -1,13 +1,13 @@
 /* .App {
-  text-align: center;
-}
+	text-align: center;
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -16,49 +16,103 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 } */
 
 h1 {
-  font-size: 3.0rem;
-  font-weight: 700;
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 3rem 0;
 }
 h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
+	font-size: 2.4rem;
+	font-weight: 700;
 }
 h3 {
-  font-size: 2.0rem;
-  font-weight: 700;
+	font-size: 2rem;
+	font-weight: 700;
 }
 h4 {
-  font-size: 1.6rem;
-  font-weight: 700;
+	font-size: 1.6rem;
+	font-weight: 700;
 }
-p{
-  font-size: 1.6rem;
-  font-weight: 400;
+p {
+	font-size: 1.6rem;
+	font-weight: 400;
 }
 
+/* header */
+header {
+	text-align: center;
+}
+header p {
+	margin-bottom: 3rem;
+}
 
 /* form */
 form {
-  display: flex;
-  flex-flow: row wrap;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	margin: 2%;
+	border: 2px solid #282c34;
+	padding: 2%;
+}
+.form-top {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.form-bottom {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 2%;
 }
 .form-section {
-  display: flex;
-  flex-flow: column nowrap;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-flow: column nowrap;
+	width: 50%;
+}
+
+.form-section label {
+	margin: 2% 2% 2% 0;
+	font-size: 1.6rem;
+}
+.form-top input,
+.form-top select {
+	font-size: 1.6rem;
+	margin-left: 2%;
+}
+
+.errors {
+	font-size: 1.6rem;
+	color: red;
+}
+
+button {
+	margin-top: 2%;
+}
+
+/* team members */
+.team-members-heading {
+	text-align: center;
+}
+.team-members {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 /* team member */
 .team-member {
-  display: flex;
-  flex-flow: column wrap;
-  border: 1px solid #282c34;
-  margin: 2%;
-  padding: 2%;
+	display: flex;
+	flex-flow: column wrap;
+	border: 2px solid #282c34;
+	margin: 2%;
+	padding: 2%;
 }
