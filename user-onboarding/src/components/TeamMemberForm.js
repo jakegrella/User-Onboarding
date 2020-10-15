@@ -162,7 +162,7 @@ export default function Form(props) {
 
 				{/* validation errors */}
 				<div className='errors'>
-					<div>{errors.name}</div>
+					<div name='name-error'>{errors.name}</div>
 					<div>{errors.username}</div>
 					<div>{errors.email}</div>
 					<div>{errors.password}</div>
